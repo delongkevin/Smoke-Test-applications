@@ -316,10 +316,6 @@ Public Class Form1
         End Try
     End Sub
 
-    Private Sub ImLostHelpToolStripMenuItem_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim listselected As String = ListBox1.SelectedItem
         Try
@@ -413,13 +409,16 @@ Public Class Form1
                "4) Be sure you are connected to the Harman network. The confluence page will appear below for scope of scripts.", MsgBoxStyle.Information, "Automation Help for Vehicle Interface")
 
     End Sub
-
  
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click, Button7.Click
-        System.Diagnostics.Process.Start("calc.exe")
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        System.Diagnostics.Process.Start("notepad++.exe")
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
         System.Diagnostics.Process.Start("excel.exe")
+    End Sub
+
+    Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
+        System.Diagnostics.Process.Start("calc.exe")
     End Sub
 End Class

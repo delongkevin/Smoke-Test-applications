@@ -94,8 +94,8 @@ Partial Class Form1
         Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -655,8 +655,8 @@ Partial Class Form1
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.Button9)
         Me.GroupBox4.Controls.Add(Me.Button7)
+        Me.GroupBox4.Controls.Add(Me.Button9)
         Me.GroupBox4.Controls.Add(Me.Button6)
         Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.Location = New System.Drawing.Point(7, 398)
@@ -675,15 +675,6 @@ Partial Class Form1
         Me.Button9.Text = "Excel Workbook"
         Me.Button9.UseVisualStyleBackColor = True
         '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(39, 73)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(115, 42)
-        Me.Button7.TabIndex = 0
-        Me.Button7.Text = "Calculator"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
         'Button6
         '
         Me.Button6.Location = New System.Drawing.Point(39, 25)
@@ -692,6 +683,15 @@ Partial Class Form1
         Me.Button6.TabIndex = 0
         Me.Button6.Text = "Notepad ++"
         Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(39, 74)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(115, 43)
+        Me.Button7.TabIndex = 1
+        Me.Button7.Text = "Calculator"
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'Form1
         '
