@@ -37,23 +37,23 @@ Public Class Form1
     End Sub
 
 
-    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click, Button5.Click
+    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
 
         Dim vmmserver As String = ""
-        If RadioButton10.Checked = True Then
-            vmmserverinput = "RAFT_CIPI.exe"
+        If RadioButton1.Checked = True Then
+            vmmserverinput = "CIPI.exe"
         End If
-        If RadioButton9.Checked = True Then
-            vmmserverinput = "RAFT_CUSW.exe"
+        If RadioButton2.Checked = True Then
+            vmmserverinput = "CUSW.exe"
         End If
-        If RadioButton8.Checked = True Then
-            vmmserverinput = "RAFT_520.exe"
+        If RadioButton3.Checked = True Then
+            vmmserverinput = "520.exe"
         End If
-        If RadioButton7.Checked = True Then
-            vmmserverinput = "RAFT_940.exe"
+        If RadioButton4.Checked = True Then
+            vmmserverinput = "940.exe"
         End If
-        If RadioButton6.Checked = True Then
-            vmmserverinput = "RAFT_MP.exe"
+        If RadioButton5.Checked = True Then
+            vmmserverinput = "MP.exe"
         End If
         If vmmserver <> "" Then
             MsgBox("Please choose a VMM server to launch. ")
@@ -421,4 +421,33 @@ Public Class Form1
     Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
         System.Diagnostics.Process.Start("calc.exe")
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dim vmmserver As String = ""
+        If RadioButton10.Checked = True Then
+            vmmserverinput = "RAFT_CIPI.exe"
+        End If
+        If RadioButton9.Checked = True Then
+            vmmserverinput = "RAFT_CUSW.exe"
+        End If
+        If RadioButton8.Checked = True Then
+            vmmserverinput = "RAFT_520.exe"
+        End If
+        If RadioButton7.Checked = True Then
+            vmmserverinput = "RAFT_940.exe"
+        End If
+        If RadioButton6.Checked = True Then
+            vmmserverinput = "RAFT_MP.exe"
+        End If
+        If vmmserver <> "" Then
+            MsgBox("Please choose a RAFT to launch. ")
+        End If
+        Try
+            System.Diagnostics.Process.Start(vmmserverinput)
+
+        Catch a As Exception
+            MsgBox("Error: Unable to find " & vmmserverinput, MsgBoxStyle.Critical, "Error: missing " & vmmserverinput & " in folder")
+        End Try
+    End Sub
+
 End Class

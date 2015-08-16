@@ -86,16 +86,16 @@ Partial Class Form1
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.RadioButton6 = New System.Windows.Forms.RadioButton()
         Me.RadioButton7 = New System.Windows.Forms.RadioButton()
         Me.RadioButton8 = New System.Windows.Forms.RadioButton()
         Me.RadioButton9 = New System.Windows.Forms.RadioButton()
         Me.RadioButton10 = New System.Windows.Forms.RadioButton()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -514,7 +514,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button1)
         Me.GroupBox2.Controls.Add(Me.ListBox1)
-        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(0, 596)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(1005, 147)
@@ -544,7 +544,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(66, 42)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(55, 37)
@@ -554,10 +554,11 @@ Partial Class Form1
         '
         'ListBox1
         '
+        Me.ListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.HorizontalScrollbar = True
         Me.ListBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.ListBox1.ItemHeight = 24
+        Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Location = New System.Drawing.Point(133, 16)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
@@ -575,12 +576,12 @@ Partial Class Form1
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Button5)
         Me.GroupBox3.Controls.Add(Me.RadioButton6)
         Me.GroupBox3.Controls.Add(Me.RadioButton7)
         Me.GroupBox3.Controls.Add(Me.RadioButton8)
         Me.GroupBox3.Controls.Add(Me.RadioButton9)
         Me.GroupBox3.Controls.Add(Me.RadioButton10)
-        Me.GroupBox3.Controls.Add(Me.Button5)
         Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(7, 214)
         Me.GroupBox3.Name = "GroupBox3"
@@ -588,6 +589,15 @@ Partial Class Form1
         Me.GroupBox3.TabIndex = 5
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Launch RAFT"
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(49, 142)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(84, 31)
+        Me.Button5.TabIndex = 6
+        Me.Button5.Text = "Launch"
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'RadioButton6
         '
@@ -644,15 +654,6 @@ Partial Class Form1
         Me.RadioButton10.Text = "PNET"
         Me.RadioButton10.UseVisualStyleBackColor = True
         '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(49, 141)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(84, 29)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Launch"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'GroupBox4
         '
         Me.GroupBox4.Controls.Add(Me.Button7)
@@ -665,6 +666,15 @@ Partial Class Form1
         Me.GroupBox4.TabIndex = 8
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Recently Used"
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(39, 74)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(115, 43)
+        Me.Button7.TabIndex = 1
+        Me.Button7.Text = "Calculator"
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'Button9
         '
@@ -683,15 +693,6 @@ Partial Class Form1
         Me.Button6.TabIndex = 0
         Me.Button6.Text = "Notepad ++"
         Me.Button6.UseVisualStyleBackColor = True
-        '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(39, 74)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(115, 43)
-        Me.Button7.TabIndex = 1
-        Me.Button7.Text = "Calculator"
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -789,10 +790,10 @@ Partial Class Form1
     Friend WithEvents RadioButton8 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton9 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton10 As System.Windows.Forms.RadioButton
-    Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button5 As System.Windows.Forms.Button
 
 End Class
